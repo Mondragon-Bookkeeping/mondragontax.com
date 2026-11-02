@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Client home | Mondragon Tax &amp; Advisory</title>
+<!--
+  Assembly portal Home embed: CLIENT segment (Portal track = Client).
+  Built 2026-11-01 to Brand Guide v1.2 + §7a. Public on GitHub Pages: keep it general, nothing client-specific.
+  Set the Assembly Home background to #F7F3EC so the frame edge disappears.
+  Never mention the separate venture, lending, loans or investing on this page.
+  TWO THINGS TO EDIT OVER TIME:
+    1. CHECK-IN LINK: replace CLIENT-CHECK-IN-LINK below with the real Calendly check-in URL.
+       Until then the button hides itself and the line tells clients to message you instead.
+    2. THIS SEASON block: between the "THIS SEASON: START" and "THIS SEASON: END" comments.
+       Delete the whole block to hide it. Re-verify every date each season.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16181F; --ink-mid:#252830; --accent:#1775FD; --accent-hover:#0F63DB;
+    --base:#F7F3EC; --panel:#DFE7E0; --muted:#6C7269; --line:#D8D1C3;
+    --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+    --sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--base);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+  .wrap{max-width:760px;margin:0 auto;padding:12px 24px 40px}
+  h1,h2{font-family:var(--serif);font-weight:500;color:var(--ink);letter-spacing:-.005em;margin:0;text-wrap:balance}
+  h1{font-size:clamp(30px,5vw,42px);line-height:1.12;margin-bottom:14px}
+  h2{font-size:clamp(24px,3.6vw,29px);line-height:1.2;margin:0 0 14px}
+  p{margin:0 0 12px}
+  a{color:var(--accent);text-underline-offset:2px}
+  a:hover{color:var(--accent-hover)}
+  strong{font-weight:600}
+  .lead{font-size:17.5px;line-height:1.55;max-width:62ch}
+  section{margin-top:40px}
+  .panel{background:var(--panel);border-radius:8px;padding:20px 22px}
+  .panel h2{margin-bottom:12px}
+  /* app guide: a plain two-column list, not cards (§7a) */
+  dl.apps{margin:0;display:grid;grid-template-columns:180px 1fr}
+  dl.apps dt,dl.apps dd{margin:0;padding:11px 0;border-top:1px solid var(--line)}
+  dl.apps dt{font-weight:600;padding-right:16px}
+  dl.apps dt:nth-last-of-type(1),dl.apps dd:last-of-type{border-bottom:1px solid var(--line)}
+  .btn{display:inline-block;margin-top:4px;background:var(--accent);color:#fff;text-decoration:none;font-weight:500;font-size:15.5px;padding:11px 20px;border-radius:7px;box-shadow:0 2px 8px rgba(23,117,253,.18);transition:background .15s ease}
+  .btn:hover,.btn:focus-visible{background:var(--accent-hover);color:#fff}
+  .checkin-fallback{display:none}
+  ul.plain{margin:0;padding-left:20px}
+  ul.plain li{margin-bottom:8px;padding-left:2px}
+  ul.plain li::marker{color:var(--muted)}
+  ul.season{list-style:none;margin:0;padding:0}
+  ul.season li{display:grid;grid-template-columns:170px 1fr;gap:2px 16px;padding:9px 0;border-top:1px solid rgba(22,24,31,.12)}
+  ul.season li:first-child{border-top:0;padding-top:0}
+  ul.season .when{font-weight:600}
+  footer{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);font-size:13px;color:var(--muted);line-height:1.55}
+  .lockup{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+  .lockup svg{height:26px;width:auto;flex-shrink:0}
+  .lockup .name{font-family:var(--serif);font-size:18px;font-weight:600;color:var(--ink)}
+  .lockup a{margin-left:auto}
+  footer p{margin:0 0 8px;max-width:78ch}
+  @media (max-width:560px){
+    body{font-size:15.5px}
+    .wrap{padding:8px 16px 32px}
+    .lead{font-size:16.5px}
+    .panel{padding:16px 18px}
+    dl.apps{grid-template-columns:1fr}
+    dl.apps dt{padding-bottom:0}
+    dl.apps dd{border-top:0;padding-top:2px}
+    dl.apps dt:nth-last-of-type(1){border-bottom:0}
+    ul.season li{grid-template-columns:1fr}
+    .lockup a{margin-left:0;width:100%}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <h1>Start with Your actions, at the top of this page.</h1>
+  <p class="lead">Anything waiting on you shows up there: a form, something to sign, an invoice or a task. If it's empty, you're caught up.</p>
+
+  <section>
+    <h2>What each tab is for</h2>
+    <!-- App list confirmed from a new client's sidebar, 2026-11-01: Home, Inbox, Tasks, Files, Contracts, Forms, Schedule A Meeting, Helpdesk, Workbook Sharing. If you add or hide an app, update this list. -->
+    <dl class="apps">
+      <dt>Home</dt><dd>This page.</dd>
+      <dt>Inbox</dt><dd>Messages with me, and the fastest way to reach me.</dd>
+      <dt>Tasks</dt><dd>What's in progress on your file and what's waiting on you.</dd>
+      <dt>Files</dt><dd>Upload what I ask for, and find what I send back (returns, reports, statements).</dd>
+      <dt>Contracts</dt><dd>Engagement letters to e-sign. Signed copies are saved here.</dd>
+      <dt>Forms</dt><dd>Questionnaires and organizers I send you.</dd>
+      <!-- VERIFY (Brandon): which booking event Schedule A Meeting opens. It should not be the initial-consultation event. -->
+      <dt>Schedule A Meeting</dt><dd>Book time with me.</dd>
+      <dt>Helpdesk</dt><dd>Short how-to articles for the portal.</dd>
+      <dt>Workbook Sharing</dt><dd>Spreadsheets I share with you, when there are any.</dd>
+      <!-- Updates = the built app, visible to everyone once published; non-lenders see "No updates for you right now". Remove this row if Updates is ever hidden. -->
+      <dt>Updates</dt><dd>You can skip this one. It isn't used for your account right now.</dd>
+
+    </dl>
+  </section>
+
+  <section>
+    <h2>Reaching me</h2>
+    <p>Inbox is the fastest way to reach me. I respond within one business day.</p>
+    <p>If something is time-sensitive, like a letter from the IRS or FTB or a deadline this week, say so in the first line.</p>
+    <!-- CHECK-IN LINK: replace CLIENT-CHECK-IN-LINK with the real URL (keep target and rel). -->
+    <a class="btn" id="checkin" href="CLIENT-CHECK-IN-LINK" target="_blank" rel="noopener">Book a check-in</a>
+    <p class="checkin-fallback" id="checkin-fallback">Want to talk something through? Message me in Inbox and I'll set up a time.</p>
+  </section>
+
+  <!-- ═══ THIS SEASON: START (edit or delete this whole block) ═══
+       Dates checked 2026-11-01. Re-verify against IRS Pub 509 (2027) / FTB before relying on them:
+       - Jan 15, 2027 (Fri): 4th-quarter 2026 estimate. Federal IRC §6654(c)(2); CA per FTB 2026 Form 540-ES instructions.
+       - Feb 1, 2027 (Mon): W-2 / 1099-NEC due. Jan 31 is a Sunday; IRC §7503 moves it to the next business day. VERIFY.
+       - Mar 15, 2027 (Mon): Forms 1120-S and 1065, IRC §6072(b). VERIFY.
+       - Apr 15, 2027 (Thu): Form 1040, IRC §6072(a). VERIFY.
+       - "January 2027" checklist timing: Brandon to confirm. -->
+  <section class="panel">
+    <h2>This season</h2>
+    <ul class="season">
+      <li><span class="when">Before December 31</span><span>If something big changed this year (a new business, a sale of property or stock, a move, a marriage), message me so we can look at it before year-end.</span></li>
+      <li><span class="when">January 2027</span><span>I'll send the document checklist for your 2026 return.</span></li>
+      <li><span class="when">Fri, Jan 15, 2027</span><span>Fourth-quarter 2026 estimated payment, federal and California, if you make them.</span></li>
+      <li><span class="when">Mon, Feb 1, 2027</span><span>W-2s and 1099-NECs due, if you pay anyone. (Jan 31 is a Sunday.)</span></li>
+      <li><span class="when">Mon, Mar 15, 2027</span><span>S-corp and partnership returns due.</span></li>
+      <li><span class="when">Thu, Apr 15, 2027</span><span>2026 individual returns due.</span></li>
+    </ul>
+  </section>
+  <!-- ═══ THIS SEASON: END ═══ -->
+
+  <section>
+    <h2>Keeping your information safe</h2>
+    <ul class="plain">
+      <li>Send documents, account numbers and Social Security numbers only through the portal, never by email or text.</li>
+      <!-- VERIFY (Brandon): view-only bank connections for every client (taken from the homepage FAQ). -->
+      <li>I'll never ask for your passwords. For bank access I use view-only connections.</li>
+      <li>If a message that looks like it's from me asks for something unusual, like a password or a payment to a new account, check with me in Inbox first.</li>
+      <li>On a shared computer, sign out when you're done.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="lockup">
+      <!-- Mark: 01_Logo/mark-color.svg (charcoal blocks, blue apex) -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134 72" role="img" aria-label="Mondragon Tax &amp; Advisory logo"><rect x="14" y="33" width="24" height="24" rx="5" fill="#16181F"/><rect x="54" y="22" width="24" height="24" rx="5" fill="#16181F"/><rect x="94" y="11" width="24" height="24" rx="5" fill="#1775FD"/><rect x="2" y="62" width="130" height="6.5" rx="3.25" fill="#16181F"/></svg>
+      <span class="name">Mondragon Tax &amp; Advisory</span>
+      <a href="https://mondragontax.com" target="_blank" rel="noopener">mondragontax.com</a>
+    </div>
+    <p>CTEC Registered Tax Preparer #A360990 · Bonded · PTIN on file</p>
+    <p>For marketing and informational purposes only. Does not constitute specific tax, legal, or financial advice. An engagement letter is required to establish a client relationship.</p>
+  </footer>
+
+</main>
+<script>
+  // Until the real check-in link is pasted in, hide the button and show the Inbox line instead.
+  (function(){
+    var b=document.getElementById('checkin'), f=document.getElementById('checkin-fallback');
+    if(b && /CLIENT-CHECK-IN-LINK/.test(b.getAttribute('href')||'')){ b.style.display='none'; if(f) f.style.display='block'; }
+  })();
+</script>
+</body>
+</html>
